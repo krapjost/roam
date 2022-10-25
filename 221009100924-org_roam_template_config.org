@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       9f2e9d92-4a3d-42f9-aff6-f4d63b8e4713
+:END:
+#+title: org-roam-template config
+#+hugo_base_dir: ~/blog
+#+hugo_section: posts
+#+hugo_publishdate: <2022-10-09 Sun 10:09>
+#+hugo_auto_set_lastmod: t
+#+filetags: @emacs org-roam hugo
+
+ *references*
+   [[https://seds.nl/notes/export_org_roam_backlinks_with_gohugo/]]
+   [[https://www.linuxzen.com/notes/notes/20211231142642-org_roam_export_backlinks_on_hugo/]]
+
+   ---
+** Doom-emacs
+
+press ~SPC f p~ to open =config.el= file.
+
+** Set default settings.
+
+#+begin_src elisp
+; file-truename function is only necessary when you use symbolic links inside org-roam-directory.
+(setq org-roam-directory (file-truename "~/org/roam"))
+; provide link completion matching outside of Org links.
+(setq org-roam-completion-everywhere t)
+; always resolve symlinks, at a performance cost
+(setq find-file-visit-truename t)
+; ensure that Org-roam is available on startup
+(org-roam-db-autosync-mode) ; To build the cache manually, run M-x org-roam-db-sync.
+#+end_src
+
+** Define function to make template.
+
+#+begin_src elisp
+(defun org-roam-hugo-template ()
+  "make template for org-roam-capture-templates"
+  (mapconcat #'identity
+             `("#+title: ${title}"
+               "#+hugo_base_dir: ~/blog" ; hugo project dir path
+               "#+hugo_section: posts" ; transpile to ~/blog/content/posts/ dir
+               "#+hugo_publishdate: %T" ; %T is date with time
+               "#+hugo_auto_set_lastmod: t" ; automatically set modified timestamp.
+               "#+filetags: %?\n") ; %? is where cursor located, filetags are [tag | @category]
+             "\n"))
+#+end_src
+
+** Set template to org-roam-capture-templates
+
+#+begin_src elisp
+(setq org-roam-capture-templates
+      '(("p" ; Key to press
+         "Posts" ; Description
+         plain ; Type of entry, available types are entry, item, checkitem, table-line
+         (function org-roam-hugo-template) ; Template
+         :target (file "%<%y%m%d%H%M%S>-${slug}.org") ; Target file, you can insert "file+head", "file+olp"... Etc.
+         :unarrowed t))) ; Show the full buffer
+#+end_src
+
+

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3f8d75de-65f1-4234-b84c-b64f4c8e9ddb
+:END:
+#+title: Second node
+#+hugo_base_dir: ~/blog
+#+hugo_section: posts
+#+hugo_publishdate: <2022-10-09 Sun 09:05>
+#+hugo_auto_set_lastmod: t
+#+filetags: node
+Second node is named after [[id:fa087991-433e-4bd0-a722-6c7ba0ab0b2b][first node]]

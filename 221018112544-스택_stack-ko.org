@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       ab8d8d1f-a448-45ae-8b15-4a41956f712b
+:END:
+#+title: 스택 (Stack)
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-10-18 Tue 11:25>
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+filetags: @CS 자료구조
+
+ 스택은 자료를 쌓아올리는 방식으로 저장한다. 책을 쌓아둔 것과 같다. 5권의 책을 쌓아뒀을 때, 첫 번째 책을 꺼내보려면 그 책 위의 네 권을 먼저 들어올려야 한다.
+이러한 특징을 FILO(First In Last Out), LIFO(Last In First Out). 처음 들어온 게 마지막에 나간다고 줄여 말한다.
+
+스택은 [[id:7fb54c4c-ed98-4801-98fd-4824276644bf][추상적 자료 구조]]이고, 이를 구체적으로 어떻게 구현할지는 구현자 마음대로이다.

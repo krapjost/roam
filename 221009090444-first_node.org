@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       fa087991-433e-4bd0-a722-6c7ba0ab0b2b
+:END:
+#+title: first node
+#+hugo_base_dir: ~/blog
+#+hugo_section: posts
+#+hugo_publishdate: <2022-10-09 Sun 09:04>
+#+hugo_auto_set_lastmod: t
+#+filetags: node
+First node is named one.

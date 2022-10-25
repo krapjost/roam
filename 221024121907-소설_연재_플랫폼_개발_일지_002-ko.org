@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       52c881ab-f7b6-4d99-9668-bf76062cef1c
+:END:
+#+title: 소설 연재 플랫폼 개발 일지 002
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-10-24 Mon 12:19>
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+filetags: @clojure clojurescript log
+* 목표
+
+1. 연재 플랫폼 기능 정의하기
+2. realworld앱 분석해서 불필요한 부분 제거하기
+
+* 과정
+
+[[id:12b745f3-8c0f-4594-985a-39f8e4eed47d][소설 연재 플랫폼 개발 일지 001]]에서 찾은 리얼월드 앱 서버, 클라이언트가 서로 호환되는 것을 확인하고
+로컬에서 돌려보았다. 너무 잘 된다. 다만 polylith와 edn 파일로 클로저 프로젝트를 어떻게 시작하고
+repl 연결을 이맥스에서 어떻게 하는건지 잘 모르겠어서 좀 헤멨다.
+CIDER만으로 하면 잘 되는데 lispy 플러그인으로 연결하니 잘 안된다.
+=e= 를 눌렀을 때 jack-in이 아니라 connect로 연결하는 방법은 없을까
+
+* 결론
+
+CRUD 잘 되니 CSS 고치고 i18n 영어까지만 한 다음에 클라우드 플레어에 올려보자.

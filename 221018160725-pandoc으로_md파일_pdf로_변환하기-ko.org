@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       9f9414f5-b069-4b0d-abac-df473bd4dd7f
+:END:
+#+title: pandoc으로 md파일 pdf로 변환하기
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-10-18 Tue 16:07>
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+filetags: pandoc
+
+ 1. 패키지 매니저로 ~pandoc~, ~wkhtmltopdf~ 를 설치한다.
+    #+begin_src shell
+ yay pandoc
+ yay wkhtmltopdf
+    #+end_src
+
+ 2. css 파일을 같은 디렉터리에 위치시킨다.
+    #+begin_src shell
+ wget https://gist.githubusercontent.com/dashed/6714393/raw/ae966d9d0806eb1e24462d88082a0264438adc50/github-pandoc.css
+    #+end_src
+
+ 3. css를 적용한 html문서를 만들고, pdf로 출력한다.
+#+begin_src shell
+pandoc -t html5 --metadata pagetitle="resume.md" --css=github-pandoc.css resume.md -o res.pdf
+#+end_src
+
+상세한 설명은 [[https://stackoverflow.com/questions/23825317/how-to-convert-markdown-css-pdf/64257218#64257218][스택 오버플로우]]에...

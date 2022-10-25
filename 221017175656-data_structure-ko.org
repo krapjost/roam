@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       b303a4f1-bc4c-4fde-86b7-be5bef61c28b
+:END:
+#+title: 자료구조
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-10-17 Mon 17:56>
+#+hugo_auto_set_lastmod: t
+#+filetags: @CS 자료구조
+
+자료구조란 [[id:b62c19c5-ba8b-4f13-96c5-19a344b021fe][추상 자료형]]을 구현한 것.
+자료(데이터)의 모임, 자료간의 관계, 자료의 입출력 방식.
+
+* 왜 자료구조를 알아야 할까
+주어진 문제를 해결할 때 자료구조를 선택하고 나면 어떤 알고리즘을 사용할지 명확해진다.
+구현의 난이도, 결과물의 성능이 자료구조에 크게 의존한다.
+
+* 자료구조의 5가지 필수 구성 요소
+[[https://computersciencewiki.org/index.php/Abstract_data_structures#:~:text=I%20found%20this%20excellent%20slide%20from%20Simon%20Allardice][참조 링크]]
+
+#+begin_quote
+1. 어떻게 *접근* 할 것인가.
+2. 어떻게 *입력* 할 것인가.
+3. 어떻게 *삭제* 할 것인가.
+4. 어떻게 *탐색* 할 것인가.
+5. 어떻게 *정렬* 할 것인가.
+#+end_quote
+
+* 자료구조 선택 방법
+
+[[http://i.stack.imgur.com/HNMy4.png]]
+
+
+* 자료구조의 분류
+
+자료구조는 추상적인 구조인지, 자료간의 관계가 선형(1:1)적인지 비선형적인지 등으로 분류 되어진다.
+
+** [[id:7fb54c4c-ed98-4801-98fd-4824276644bf][추상적 자료 구조]]
+*** [[id:ab8d8d1f-a448-45ae-8b15-4a41956f712b][스택 (Stack)]]
+*** 큐
+*** 트리
+*** 그래프
+** 선형 자료 구조
+*** [[id:e7551350-6f46-486b-9179-4cab8bd0a272][배열(Array)]]
+*** 리스트(List / Sequence)

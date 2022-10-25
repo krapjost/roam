@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       e7551350-6f46-486b-9179-4cab8bd0a272
+:END:
+#+title: 배열 (Array)
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-10-17 Mon 18:00>
+#+hugo_auto_set_lastmod: t
+#+filetags: @CS 자료구조
+
+배열은 연속적인 자료의 나열이다. 배열 내에는 동일한 형(type)의 자료가 나열되어야 한다.
+보통의 프로그래밍 언어에서 인덱스는 0부터 시작한다. 루아는 특이하게 1부터 시작한다.
+
+C에서는 선언 시에 배열로 사용될 메모리 주소의 범위를 정적으로 할당한다.
+반면 Javascript에서의 배열은 동적으로 할당되며, 메모리 주소의 연속일 뿐인 C와 다르게
+다양한 메서드를 포함하고 있는 객체로 구현되어 있다.
+내부 작동은 브라우저의 엔진마다 다를 수 있다고 한다.
+
+#+begin_src javascript
+const arr = [1, 2, 3];
+arr[1];
+> 2
+arr["1"];
+> 2
+#+end_src
+
+인덱스는 특이하게 "1"로도 1로도 접근 가능한데
+내부적으로 ~toString()~ 메소드를 호출하기 때문이라고 한다.

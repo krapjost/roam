@@ -1,0 +1,148 @@
+:PROPERTIES:
+:ID:       b03bcff5-a505-481b-9926-ec40bdd42f73
+:END:
+#+title: org-mode cheat-sheet
+#+hugo_base_dir: ~/blog
+#+hugo_section: posts
+#+hugo_publishdate: <2022-10-09 Sun 13:01>
+#+hugo_auto_set_lastmod: t
+#+filetags: org-mode org @emacs
+
+** line breaks
+1. Enter twice.
+   It renders ~<p>line</p><p>line</p>~
+
+   line1
+
+   line2
+2. Insert '\\' end of line.
+   It renders ~<p>line<br>line<p/>~
+
+   line1\\
+   line2
+
+** Inline code block
+
+1. Wrap code with ~
+
+   #+begin_example
+   ~code~
+   #+end_example
+   It shown as ~code~
+
+2. Wrap code with =
+
+   #+begin_example
+   =code=
+   #+end_example
+   It shown as =code=
+
+** Code block
+
+~<C-c> <C-,> s~
+#+begin_src org
+[ #+begin_src <language> ]
+  code
+[ #+end_src ]
+#+end_src
+
+** Example
+
+To ignore special syntax.\\
+~<C-c> <C-,> e~
+**** Notes: Insert comma before [ * | ,* | #+ | ,#+ ].
+#+begin_example
+,#+begin_example
+,#+end_example
+#+end_example
+
+** Center
+
+~<C-c> <C-,> c~
+#+begin_example
+,#+begin_center
+text centered
+,#+end_center
+#+end_example
+#+begin_center
+text centered
+#+end_center
+
+** Comment
+
+~<C-c> <C-,> C~
+#+begin_example
+,#+begin_comment
+This is comment.
+,#+end_comment
+#+end_example
+
+** Verse and Quote
+
+*** verse
+To preserve the line breaks, indentation and blank lines in a region,\\
+but otherwise use normal formatting.\\
+~<C-c> <C-,> v~
+#+begin_verse
+*The road not taken*
+
+Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+
+Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+
+And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way leads on to way,
+I doubted if I should ever come back.
+
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I—
+I took the one less traveled by,
+And that has made all the difference.
+
+                                    --Robert Frost
+#+end_verse
+
+
+*** quote
+Usual format to quoting a passage from another document.\\
+~<C-c> <C-,> q~
+#+begin_quote
+The road not taken
+
+Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+
+Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+
+And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way leads on to way,
+I doubted if I should ever come back.
+
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I—
+I took the one less traveled by,
+And that has made all the difference.
+
+                        --Robert Frost
+#+end_quote

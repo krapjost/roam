@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       6d13ded1-628a-4357-afda-4839ef04336e
+:END:
+#+title: 소설 연재 플랫폼 개발 일지 003
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-10-25 Tue 11:06>
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+filetags: @log clojure clojurescript
+
+* 목표
+
+1. [ ] 타 연재 플랫폼 웹 클라이언트에서 서버 데이터 어떤 형식으로 가져오는지 확인할 것
+2. [ ] 그 형식에 맞춰 API 변경하기
+3. [ ] lispy 사용해서 repl 연결하기, repl 활용하는 방법들 익숙해지기
+4. [ ] garden으로 css 적용하기
+5. [ ] i18n 한국어 영어까지 하기, 접속자 ip 위치에 따라 다른 언어 제공하기
+
+
+* 과정
