@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       1b2f63a2-bcab-4651-81f5-6b8a3c32afb6
+:END:
+#+title: 221101131003-사용자_후기_기획_워크플로우에_통합하는-ko
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-11-01 Tue 13:10>
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+filetags: idea
+
+고객들이 원하는 게 있어 개발 요청 설문을 작성해서 보내면 깃헙이나 트렐로 등 사용 중인 할 일 관리 툴과 통합되어 투두 리스트에 추가된다.
+아니면 다른 방식으로?

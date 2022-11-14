@@ -7,7 +7,7 @@
 #+hugo_publishdate: <2022-10-23 Sun 13:57>
 #+hugo_front_matter_format: yaml
 #+hugo_auto_set_lastmod: t
-#+filetags: @clojure clojurescript log
+#+filetags: @개발일지 clojurescript
 
 * 목표
 1. =shadow-cljs=, =shadow-grove= 사용해서 dummy data 메인 페이지 띄우기.

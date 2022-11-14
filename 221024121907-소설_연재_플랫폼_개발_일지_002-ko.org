@@ -7,7 +7,7 @@
 #+hugo_publishdate: <2022-10-24 Mon 12:19>
 #+hugo_front_matter_format: yaml
 #+hugo_auto_set_lastmod: t
-#+filetags: @clojure clojurescript log
+#+filetags: @개발일지 clojurescript
 * 목표
 
 1. 연재 플랫폼 기능 정의하기

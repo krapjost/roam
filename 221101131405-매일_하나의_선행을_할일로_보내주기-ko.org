@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       900c9d42-0ee6-4c6e-9dc5-197d02bb3e17
+:END:
+#+title: 매일 하나의 선행을 할일로 보내주기
+#+hugo_base_dir: ~/blog
+#+hugo_section: ../content_ko/posts
+#+hugo_publishdate: <2022-11-01 Tue 13:14>
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+filetags: @idea
+
+가입하면 -> 하면 기분 좋아지는 선행을 투두 리스트 ( 구글 투두? ) 등 사용 중인 투두 리스트에?
+할일로 보내준다.
+랜덤 발송되는 선행 목록, 프로필에 달 수 있는 뱃지 추가?
+많이 수행하면 프로필에 레벨 표시?
