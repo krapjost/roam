@@ -1,7 +1,6 @@
 :PROPERTIES:
 :ID:       4ce643b6-4575-48e0-b805-e26e779cb13a
 :END:
-#+title: 221114144112 소설 연재 플랫폼 개발 일지 008 Ko
 #+title: 소설 연재 플랫폼 개발 일지 008
 #+hugo_base_dir: ~/blog
 #+hugo_section: ../content_ko/posts
